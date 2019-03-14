@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1>Calculator</h1>
+    <script>
+    var tanya = 'ya'
+    while(tanya == 'ya'){
+      var angka1 = parseInt(prompt('Masukan angka pertama'))
+      var angka2 = parseInt(prompt('Masukan angka kedua'))
+      var operasiMat = prompt('Tambah, Kurang, Kali, Bagi, Pangkat, Min, Max')
+      var hasil = ''
+      if (operasiMat == 'Tambah') {
+        hasil = angka1 + angka2
+      }else if (operasiMat == 'Kurang') {
+        hasil = angka1 - angka2
+      }else if (operasiMat == 'Kali') {
+        hasil = angka1 * angka2
+      }else if (operasiMat == 'Bagi') {
+        hasil = angka1 / angka2
+      }else if (operasiMat == 'Pangkat') {
+        hasil = Math.pow(angka1,angka2);
+      }else if (operasiMat == 'Min') {
+        hasil = Math.min(angka1,angka2);
+      }else if (operasiMat == 'Max') {
+        hasil = Math.max(angka1,angka2);
+      }else{
+        hasil = 'memasukan pilihan yang salah';
+      }
+      alert(hasil);
+      tanya = confirm('apakah mau menghitung lagi?');
+    }
+    alert('terima kasih sudah menghitung');
+
+    </script>
+
+  </body>
+</html>
